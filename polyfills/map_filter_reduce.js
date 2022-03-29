@@ -57,3 +57,11 @@ const queryObject = queryString.split("&").myReduce((accum, current) => {
   return accum;
 }, {});
 console.log(queryObject);
+
+//Use Reduce as Map
+console.log(
+  arr.reduce((acc, current, index) => {
+    acc[index] = current * 2;
+    return acc;
+  }, [])
+);
