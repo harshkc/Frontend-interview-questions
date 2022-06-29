@@ -1,0 +1,36 @@
+#toast {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  padding: 0 1rem;
+  width: 250px;
+  background: greenyellow;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#toast.show {
+  display: block;
+  top: 20px;
+  right: 20px;
+  transition: cubic-bezier(0.47, 0, 0.745, 0.715) all 0.5s;
+}
+
+#toast-button {
+  /* center the button */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+}
