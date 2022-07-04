@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.stars {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 5rem 0;
+  font-size: larger;
+  flex-direction: row-reverse;
+}
+
+.stars i:hover {
+  color: gold;
+}
+
+.stars i:hover,
+.stars i:hover ~ i {
+  color: gold;
+}
+
+.rating {
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
