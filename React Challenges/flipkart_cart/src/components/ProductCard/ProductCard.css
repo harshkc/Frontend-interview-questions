@@ -1,0 +1,33 @@
+.product-card {
+  padding: 1rem 0.75rem;
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  border: 1px solid var(--clr-grey-8);
+  box-shadow: var(--light-shadow);
+}
+
+.cart-btn {
+  text-align: center;
+  background: var(--clr-green-dark);
+}
+.cart-btn:hover {
+  background: var(--clr-green-light);
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.product-info {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.product-info h5,
+p {
+  letter-spacing: normal;
+  margin-bottom: 0;
+}

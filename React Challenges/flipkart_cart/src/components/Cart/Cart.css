@@ -1,0 +1,13 @@
+.cart-page {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 1rem;
+}
+
+.cart-container {
+  margin-bottom: 1.5rem;
+}
+
+hr {
+  margin-bottom: 1.5rem;
+}

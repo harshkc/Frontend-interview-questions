@@ -1,0 +1,4 @@
+.products-page {
+  display: grid;
+  grid-template-columns: 1fr;
+}

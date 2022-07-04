@@ -3,16 +3,14 @@
 //time taken for completion
 
 function asyncParallel(taskList, resultsCallback) {
-  const result = [];
-  let completionCounter = 0;
-  taskList.forEach((asyncTask) => {
-    asyncTask((value) => {
-      result.push(value);
-      completionCounter++;
-      if (completionCounter === taskList.length) {
-        resultsCallback.call(null, result);
-      }
+  let result = [];
+  let counter = 0;
+  taskList.forEach((task, index) => {
+    task((val) => {
+      result.push(val);
+      counter++;
     });
+    if (counter === taskList.length) resultsCallback(result);
   });
 }
 
@@ -22,7 +20,7 @@ function createAsyncTask() {
   return function (callback) {
     setTimeout(() => {
       callback(value);
-    }, (value + Math.floor(Math.random() * 10)) * 1000);
+    }, Math.floor(Math.random() * 10) * 1000);
   };
 }
 

@@ -1,0 +1,15 @@
+nav {
+  background: var(--clr-primary-1);
+  color: var(--clr-white);
+  padding: 1rem 0rem;
+}
+
+.nav-center {
+  display: grid;
+  grid-template-columns: 1fr 3fr 0.5fr;
+  column-gap: 5rem;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+}
