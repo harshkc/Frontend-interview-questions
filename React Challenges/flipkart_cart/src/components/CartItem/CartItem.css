@@ -1,0 +1,48 @@
+.cart-item {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--clr-primary-8);
+  border-radius: var(--radius);
+}
+.cart-item-details {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.increment-decrement {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.increment-decrement-icon {
+  font-size: 1.25rem;
+}
+
+.cart-actions {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+}
+.cart-btns {
+  display: flex;
+  gap: 1rem;
+}
+img {
+  height: 10rem;
+  object-fit: cover;
+}
+
+/* svg {
+  vertical-align: bottom;
+} */
+
+.btn-delete {
+  background: var(--clr-red-dark);
+}
+.btn-delete:hover {
+  background: var(--clr-red-light);
+}
