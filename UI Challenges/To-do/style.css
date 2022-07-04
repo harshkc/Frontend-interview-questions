@@ -1,0 +1,54 @@
+body {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  background-color: blue;
+  width: 500px;
+  margin: 0.5rem;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.delete {
+  display: none;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.selected {
+  border-radius: 5rem;
+}
+
+#red {
+  background-color: red;
+}
+#green {
+  background-color: green;
+}
+#yellow {
+  background-color: yellow;
+}
