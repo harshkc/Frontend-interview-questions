@@ -1,1 +1,1 @@
-### This repo contains my implementation of famous interview questions asked in JS Interviews.
+### This repo contains famous and tricky questions asked in a Frontend interview.
