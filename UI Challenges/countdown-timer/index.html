@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="timer">
+        <div class="timer-display">
+          <div class="timer-display-inner">
+            <input
+              class="timer-display-value"
+              id="timer-display-min"
+              placeholder="MM"
+              min="0"
+              max="60"
+              onKeyPress="if(this.value.length==2) return false;"
+              oninput="(validity.valid)||(value=60);"
+              type="number"
+              defaultValue="00"
+            />
+            <span> : </span>
+            <!-- maximum input length 2 -->
+            <input
+              class="timer-display-value"
+              id="timer-display-sec"
+              placeholder="SS"
+              min="0"
+              max="60"
+              onKeyPress="if(this.value.length==2) return false;"
+              oninput="(validity.valid)||(value=60);"
+              type="number"
+              defaultValue="00"
+            />
+          </div>
+          <div class="timer-display-outer">
+            <button id="start-btn">Start</button>
+            <button id="pause-btn">Pause</button>
+            <button id="reset-btn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js" async defer></script>
+  </body>
+</html>
