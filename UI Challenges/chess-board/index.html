@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chess-Board</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- create a chess board -->
+    <div class="input-size">
+      <label for="input-size">Input size for board: </label>
+      <input
+        type="number"
+        id="input-size"
+        value="8"
+        max="10"
+        min="2"
+        oninput="(validity.valid)||(value=10);"
+      />
+    </div>
+    <button id="create-btn">Create</button>
+    <div class="board"></div>
+    <script src="./script.js" async defer></script>
+  </body>
+</html>
